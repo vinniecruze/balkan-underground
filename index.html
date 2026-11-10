@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#090909"><title>BALKAN UNDERGROUND</title>
-<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png" type="image/png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Balkan UG"><link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="favicon.png" type="image/png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Balkan UG"><link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="shell">
@@ -18,7 +18,7 @@
     <div class="sidebar-bottom"><span class="dot"></span> DEMO OKRUŽENJE</div>
   </aside>
   <main>
-    <header><button class="mobile-brand" id="menu">☰ BU</button><div class="top-label">ONLINE GAMING COMMUNITY</div><div class="user-chip"><span class="avatar">IG</span><span id="topUser">Gost igrač</span></div></header>
+    <header><button class="mobile-brand" id="menu">☰ BU</button><div class="top-label">ONLINE COMMUNITY GAMING</div><div class="user-chip"><span class="avatar">IG</span><span id="topUser">Gost igrač</span></div></header>
     <section id="auth" class="auth">
       <div class="auth-copy"><div class="eyebrow">DOBRODOŠAO U GRAD</div><h1>ULAZI U<br><em>BALKAN</em><br>UNDERGROUND.</h1><p>Jedan nalog. Tvoj karakter. Tvoj grad.</p></div>
       <div class="auth-card"><div class="brand small"><div class="brand-mark">BU</div><div><b>BALKAN</b><span>UNDERGROUND</span></div></div>
@@ -28,15 +28,15 @@
       </div>
     </section>
     <section id="app" class="hidden">
-      <div class="hero"><div class="hero-content"><div class="eyebrow"><span class="dot"></span> BALKAN UNDERGROUND ROLEPLAY</div><h1>BALKAN<br><em>UNDERGROUND</em></h1><p>ONLINE GAMING COMMUNITY</p><button class="primary" id="play">▶ &nbsp; ULAZAK U IGRU</button></div><div class="hero-stamp">BU<br><small>EST. 2026</small></div></div>
+      <div class="hero"><div class="hero-content"><div class="eyebrow"><span class="dot"></span> BALKAN UNDERGROUND ROLEPLAY</div><h1>BALKAN<br><em>UNDERGROUND</em></h1><p>ONLINE COMMUNITY GAMING</p><button class="primary" id="play">▶ &nbsp; ULAZAK U IGRU</button></div><div class="hero-stamp">BU<br><small>EST. 2026</small></div></div>
       <div class="stats"><div class="stat"><span>STATUS SERVERA</span><b><i class="dot"></i> ADRESA PODEŠENA · STATUS NIJE PROVEREN</b></div><div class="stat"><span>IP ADRESA SERVERA</span><b id="serverIp">62.171.167.126:7777</b></div><div class="stat"><span>MOJ KARAKTER</span><b id="activeCharacter">Nije izabran</b></div></div>
       <div class="section-head"><div><div class="eyebrow">TVOJ NALOG</div><h2>Kontrolna tabla</h2></div></div>
       <div class="quick-grid"><button class="quick" data-go="characters"><strong>♟</strong><b>Karakteri</b><span>Kreiraj ili izaberi karakter</span></button><button class="quick" data-go="news"><strong>▤</strong><b>Novosti</b><span>Prati dešavanja u gradu</span></button><button class="quick" data-go="profile"><strong>◎</strong><b>Profil</b><span>Upravljaj svojim nalogom</span></button></div>
     </section>
-    <section id="characters" class="page hidden"><div class="eyebrow">IDENTITET U GRADU</div><h1>MOJI <em>KARAKTERI</em></h1><p class="muted">Izaberi karakter ili napravi novi. Predloženi karakter: Vinnie Cruze.</p><div id="characterList" class="character-grid"></div><div class="panel"><h3>Novi karakter</h3><form id="characterForm" class="inline-form"><input id="charName" placeholder="Ime i prezime (npr. Marko Marković)" required><button class="primary" type="submit">＋ KREIRAJ</button></form></div></section>
+    <section id="characters" class="page hidden"><div class="eyebrow">IDENTITET U GRADU</div><h1>MOJI <em>KARAKTERI</em></h1><p class="muted">Izaberi postojeći karakter ili napravi novi.</p><div id="characterList" class="character-grid"></div><div class="panel"><h3>Novi karakter</h3><form id="characterForm" class="inline-form"><input id="charName" placeholder="Ime i prezime (npr. Marko Marković)" required><button class="primary" type="submit">＋ KREIRAJ</button></form></div></section>
     <section id="news" class="page hidden"><div class="eyebrow">OBAVEŠTENJA</div><h1>VESTI IZ <em>GRADA</em></h1><article class="news-card"><div class="news-tag">ONLINE GAMING COMMUNITY</div><h2>BALKAN UNDERGROUND SE PRIPREMA</h2><p>Dobrodošao u početnu demo verziju projekta. Uskoro stižu informacije o testiranju, pravilima i otvaranju grada.</p><small>10. NOVEMBAR 2026. · TIM BALKAN UNDERGROUND</small></article><article class="news-card"><div class="news-tag">RAZVOJ APLIKACIJE</div><h2>RAD NA MOBILNOJ APLIKACIJI</h2><p>Pripremaju se korisnički nalozi, karakteri i povezivanje sa multiplayer klijentom. Funkcije koje zahtevaju server biće uključene nakon integracije.</p><small>DEMO OBJAVA</small></article></section>
-    <section id="profile" class="page hidden"><div class="eyebrow">KORISNIČKI NALOG</div><h1>MOJ <em>PROFIL</em></h1><div class="profile-card"><div class="avatar big" id="profileAvatar">IG</div><div><h2 id="profileName">Gost igrač</h2><p class="muted">Balkan Underground član</p></div></div><div class="panel"><p><span class="muted">Karakter</span><b id="profileCharacter">Vinnie Cruze</b></p><p><span class="muted">Server</span><b>62.171.167.126:7777</b></p><p><span class="muted">Korisničko ime</span><b id="profileHandle">—</b></p><p><span class="muted">Broj karaktera</span><b id="profileCount">0</b></p><button class="danger" id="logout">ODJAVI SE</button></div></section>
-    <footer> BALKAN UNDERGROUND <span>ONLINE GAMING COMMUNITY · DEMO</span></footer>
+    <section id="profile" class="page hidden"><div class="eyebrow">KORISNIČKI NALOG</div><h1>MOJ <em>PROFIL</em></h1><div class="profile-card"><div class="avatar big" id="profileAvatar">IG</div><div><h2 id="profileName">Gost igrač</h2><p class="muted">ONLINE COMMUNITY GAMING član</p></div></div><div class="panel"><p><span class="muted">Karakter</span><b id="profileCharacter">Nije izabran</b></p><p><span class="muted">Server</span><b>62.171.167.126:7777</b></p><p><span class="muted">Korisničko ime</span><b id="profileHandle">—</b></p><p><span class="muted">Broj karaktera</span><b id="profileCount">0</b></p><button class="danger" id="logout">ODJAVI SE</button></div></section>
+    <footer> BALKAN UNDERGROUND <span>ONLINE COMMUNITY GAMING · DEMO</span></footer>
   </main>
 </div>
 <div class="toast" id="toast"></div><script src="app.js"></script>
