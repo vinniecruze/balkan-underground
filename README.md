@@ -24,7 +24,3 @@ Za instalaciju na telefon sa drugog uređaja potreban je HTTPS hosting.
 - Server status i broj igrača nisu potvrđeni uživo.
 - GTA SA-MP 0.3.7 klijent nije ugrađen; dugme za igru je demonstraciono.
 - Neophodni su HTTPS hosting, backend i pravno odobrena integracija multiplayer klijenta za pravu aplikaciju.
-
-
-## Važno pre javnog puštanja
-Ovo je PWA demo/prototip. Prijava i registracija čuvaju se samo lokalno u pregledaču; nije povezana sa bazom korisnika niti sa SA-MP serverom. Za produkciju je potreban backend i hosting sa HTTPS. Sama objava na HTTPS ne menja SA-MP server.
