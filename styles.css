@@ -1,0 +1,49 @@
+*{box-sizing:border-box}
+:root{color-scheme:dark;--cyan:#00d9ff;--blue:#087bff;--panel:#07172c;--line:#2d75b8}
+html{min-height:100%;background:#010611}
+body{margin:0;min-height:100vh;padding-bottom:90px;color:#f5fbff;font-family:Arial,Helvetica,sans-serif;background:#010611 url('./assets/bg-city-car.jpg') center 42%/cover fixed}
+body:before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(0,8,24,.34),rgba(0,5,15,.86)),url('./assets/bg-city-car.jpg') center 42%/cover no-repeat;opacity:.92}
+#app{max-width:520px;min-height:100vh;margin:auto;border-left:1px solid #087bff55;border-right:1px solid #087bff55;background:linear-gradient(180deg,rgba(1,8,22,.58),rgba(0,0,0,.78))}
+.topbar{height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;position:sticky;top:0;z-index:5;background:rgba(1,7,18,.94);border-bottom:1px solid #0b4d88}
+.icon-btn{border:0;background:none;color:white;font-size:27px;padding:7px;cursor:pointer}
+.header-logo{width:48px;height:48px;object-fit:contain}
+main{padding:12px 16px 28px}
+.brand{text-align:center;padding:18px 0 24px;text-shadow:0 0 16px #008cff}
+.brand-logo-wrap img{width:112px;height:112px;object-fit:contain;filter:drop-shadow(0 0 13px #008cff)}
+.brand h1{font-family:Georgia,serif;font-size:clamp(30px,8vw,42px);line-height:.91;margin:4px 0 8px;letter-spacing:-1px;text-shadow:0 2px 5px #fff,0 0 14px #008cff}
+.brand p{color:var(--cyan);font-weight:800;letter-spacing:1.4px;font-size:clamp(13px,3.5vw,17px);margin:8px 0}
+.server-card,.content-panel{background:linear-gradient(145deg,rgba(8,32,60,.96),rgba(1,8,20,.97));border:1.5px solid #287ac9;border-radius:20px;padding:17px;margin:10px 0 16px;box-shadow:0 0 18px #006eff55}
+.server-status{display:flex;justify-content:space-between;align-items:center;color:#37ff42;font-size:18px;font-weight:800;padding-bottom:13px;border-bottom:1px solid #284d70}
+.online-dot{display:inline-block;width:15px;height:15px;background:#20f52d;border-radius:50%;box-shadow:0 0 12px #20f52d;margin-right:8px}
+.server-ip{text-align:center;position:relative;padding:12px 24px;border-bottom:1px solid #284d70}
+.server-ip span{display:block;font-size:15px}.server-ip strong{display:block;font-size:clamp(19px,5vw,24px);margin-top:3px}
+.server-ip button{position:absolute;right:0;top:27px;font-size:22px;color:#dff8ff;background:none;border:0}
+.play-button,.primary{display:block;width:100%;text-align:center;text-decoration:none;border-radius:13px;padding:18px 12px;font-weight:900;font-size:20px;margin:14px 0 4px;background:linear-gradient(110deg,#009dff,#063dff);border:1px solid #21caff;color:white;box-shadow:0 0 15px #007bff77;cursor:pointer}
+.tiny-note{font-size:10px;color:#8aaac6;text-align:center;margin:8px 0 0}
+.tile-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.tile{min-height:98px;background:#061529;border:1.5px solid #315274;border-radius:16px;padding:12px 4px;color:#dff8ff;cursor:pointer;box-shadow:inset 0 0 16px #0a2342}
+.tile span{display:block;font-size:29px}.tile small{display:block;font-size:15px;margin-top:7px}
+.content-panel{min-height:150px}
+h2{margin:3px 0 14px;color:#8eeaff;font-size:22px}
+p{line-height:1.45}
+button,input,select,textarea{font:inherit}
+input,select,textarea{width:100%;padding:13px;margin:6px 0;border-radius:9px;border:1px solid #35628d;background:#020d1c;color:white;font-size:16px}
+label{display:block;color:#bdeaff;margin-top:10px;font-size:14px}
+.primary{font-size:16px;padding:14px}.secondary{display:block;width:100%;padding:13px;margin:9px 0;border:1px solid var(--cyan);border-radius:11px;background:#04162b;color:#eafaff;font-weight:bold;cursor:pointer}
+.row{display:flex;gap:9px}.row>*{flex:1}
+.muted{color:#9cb8d0;font-size:13px}.news-item,.character-row{padding:13px;margin:10px 0;border:1px solid #234d76;border-radius:12px;background:#071a30}
+.news-item h3{margin:0 0 5px}.news-item time{font-size:12px;color:#8db4d6}
+.avatar{width:100px;height:100px;object-fit:cover;border-radius:50%;border:2px solid var(--cyan);display:block;margin:8px auto}
+.skin-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;max-height:340px;overflow:auto;margin:10px 0}
+.skin-option{display:flex;align-items:center;gap:6px;padding:8px;border:1px solid #2b5277;border-radius:8px;background:#06172a;font-size:13px}
+.skin-option input{width:auto;margin:0}
+.bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(520px,100%);display:flex;justify-content:space-around;padding:8px 5px calc(8px + env(safe-area-inset-bottom));background:rgba(1,5,12,.97);border-top:1px solid #087bff88;z-index:8}
+.bottom-nav button{background:none;border:0;color:#eaf7ff;min-width:58px;cursor:pointer}.bottom-nav span{display:block;font-size:23px}.bottom-nav small{display:block;font-size:12px;margin-top:3px}
+#toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#092747;border:1px solid var(--cyan);padding:10px 15px;border-radius:10px;display:none;z-index:20;max-width:90%;text-align:center}
+.danger{border-color:#e33;color:#ff7777}.inline-actions{display:flex;gap:8px}.inline-actions button{flex:1}
+@media(min-width:600px){body{padding-top:20px}.topbar{border-radius:16px 16px 0 0}}
+
+/* v1.2 background assets */
+.brand{position:relative}
+.server-card,.content-panel{backdrop-filter:blur(7px);background:linear-gradient(145deg,rgba(5,24,48,.91),rgba(1,7,18,.94))}
+.news-item{backdrop-filter:blur(5px)}

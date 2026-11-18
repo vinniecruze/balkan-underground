@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#020817"><meta name="description" content="Balkan Underground — Online Gaming Community">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./assets/bu-icon.png"><link rel="apple-touch-icon" href="./assets/bu-icon.png">
+<link rel="stylesheet" href="./styles.css"><title>Balkan Underground</title>
+</head>
+<body>
+<div id="app">
+<header class="topbar">
+<button class="icon-btn" data-page="more" aria-label="Meni">☰</button>
+<img class="header-logo" src="./assets/bu-icon.gif" alt="Balkan Underground">
+<button class="icon-btn" data-page="news" aria-label="Novosti">♧</button>
+</header>
+<main id="main">
+<section class="brand">
+<div class="brand-logo-wrap"><img src="./assets/bu-icon.gif" alt="BU logo"></div>
+<h1>BALKAN<br>UNDERGROUND</h1><p>ONLINE GAMING COMMUNITY</p>
+</section>
+<section class="server-card">
+<div class="server-status"><span><i class="online-dot"></i> Server Online*</span><b id="players">-- / 1000</b></div>
+<div class="server-ip"><span>IP Adresa Servera:</span><strong>62.171.167.126:7777</strong><button id="copyIp" aria-label="Kopiraj IP">▢</button></div>
+<a class="play-button" id="playBtn" href="samp://62.171.167.126:7777">▶ POKRENI IGRU</a>
+<p class="tiny-note">*Status i broj igrača nisu potvrđeni uživo.</p>
+</section>
+<section class="tile-grid">
+<button class="tile" data-page="profile"><span>♟</span><small>Profil</small></button>
+<button class="tile" data-page="characters"><span>♟</span><small>Karakteri</small></button>
+<button class="tile" data-page="news"><span>▤</span><small>Novosti</small></button>
+<button class="tile" data-page="server"><span>✚</span><small>Server Info</small></button>
+<button class="tile" data-page="donations"><span>♥</span><small>Donacije</small></button>
+<button class="tile" data-page="settings"><span>⚙</span><small>Podešavanja</small></button>
+</section>
+<section id="view" class="content-panel" aria-live="polite"></section>
+</main>
+<nav class="bottom-nav">
+<button data-page="home"><span>⌂</span><small>Početna</small></button>
+<button data-page="news"><span>▤</span><small>Novosti</small></button>
+<button data-page="profile"><span>♙</span><small>Profil</small></button>
+<button data-page="more"><span>☷</span><small>Više</small></button>
+</nav>
+<div id="toast" role="status" aria-live="polite"></div>
+</div>
+<script src="./app.js" defer></script>
+</body></html>
